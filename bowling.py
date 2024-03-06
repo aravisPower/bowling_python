@@ -11,7 +11,7 @@ def lancer(nbreQuillesRestantes):
 	'''tirage au sort du nombre de quilles renversées,
 	puis renvoie le nombre de quilles qui restent debout'''
 	tirage = random.randint(0, nbreQuillesRestantes)	# contient le nombre de quilles tombées
-	return (10 - tirage)
+	return (nbreQuillesRestantes - tirage)
 
 def jeu(joueur, tourDeJeu):
 	'''effectue les tours de jeu et renvoie les points'''
